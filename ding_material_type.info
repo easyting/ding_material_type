@@ -1,0 +1,7 @@
+name = Ding material type
+description = Shows material type headline on collection view page.
+package = Ding!
+version = "7.x-1.18"
+core = 7.x
+
+dependencies[] = ting_search

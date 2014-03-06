@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * Interface module for talking with the materials backend.
+ */
+
+/**
+ * Implements hook_preprocess_page()
+ */
+function ding_material_type_preprocess_page(&$variables) {
+  $path = current_path();
+
+  if (strpos($path, 'ting/collection') === 0) {
+    drupal_add_css(drupal_get_path('module', 'ding_material_type') . '/css/ding_material_type.styles.css');
+  }
+}
